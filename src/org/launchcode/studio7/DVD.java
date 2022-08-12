@@ -1,10 +1,29 @@
 package org.launchcode.studio7;
 
-public class DVD {
+import java.util.ArrayList;
 
-    // TODO: Implement your custom interface.
+public class DVD implements Disc{
 
-    // TODO: Determine which fields, methods, and constructors can be extended from the base class and which ones
-    //  need to be declared separately.
+    private static final int storageCap = 4700;
+    private String fileTypes = ".vob";
+
+    ArrayList<String> discContents = null;
+    private static final double writeSpeedPerSecond = 1.4;
+    private static final double readSpeedPerSecond = 5.2;
+
+    @Override
+    public void read() {
+
+    }
+
+    @Override
+    public void write() {
+
+    }
+
+    @Override
+    public void reportContents() {
+
+    }
 
 }

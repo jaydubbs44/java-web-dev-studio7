@@ -1,10 +1,32 @@
 package org.launchcode.studio7;
 
-public class CD {
+import java.util.ArrayList;
 
-    // TODO: Implement your custom interface.
+public class CD implements Disc{
 
-    // TODO: Determine which fields, methods, and constructors can be extended from the base class and which ones
-    //  need to be declared separately.
+    private static final int storageCap = 750;
+    private ArrayList<String> fileTypes = new ArrayList<>(){
+        {
+            add(".aif");
+            add(".wav");
+        }
+    };
+    ArrayList<String> discContents = null;
+    private static final double writeSpeedPerSecond = 0.15;
+    private static final double readSpeedPerSecond = 0.3;
 
+    @Override
+    public void read() {
+
+    }
+
+    @Override
+    public void write() {
+
+    }
+
+    @Override
+    public void reportContents() {
+
+    }
 }
